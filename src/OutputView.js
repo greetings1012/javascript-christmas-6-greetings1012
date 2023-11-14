@@ -4,7 +4,7 @@ import {
 
 import {
     OUTPUT_EVENT_INFORMATION,
-} from "../constants.js"
+} from "./constants.js"
 const OutputView = {
 
     printEventInformation() {

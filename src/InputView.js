@@ -5,7 +5,7 @@ import {
 import { 
     INPUT_GET_DATE,
     ERROR_INVALIDATE_DATE,
-} from "../constants.js";
+} from "./constants.js";
 
 const InputView = {
     async getDate() {
