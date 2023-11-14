@@ -4,6 +4,7 @@ import {
 
 import {
     OUTPUT_EVENT_INFORMATION,
+    OUTPUT_MENU,
 } from "./constants.js"
 const OutputView = {
 
@@ -11,7 +12,11 @@ const OutputView = {
         Console.print(OUTPUT_EVENT_INFORMATION + `\n`);
     },
 
-    printMenu() {
+    printMenu(){
+        Console.print(`n` + OUTPUT_MENU + `\n`);
+    },
+
+    printOrder() {
         Console.print("<주문 메뉴>");
         // ...
     }

@@ -14,7 +14,7 @@ const InputView = {
             InputValidation.isValidateDate(input);
         } catch (error) {
             Console.print(error.message);
-            return this.getDate();
+            return await this.getDate();
         }
     }
 }
