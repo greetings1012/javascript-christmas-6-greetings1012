@@ -2,10 +2,28 @@ import {
     Console, 
 } from "@woowacourse/mission-utils";
 
+import { 
+    INPUT_GET_DATE,
+    ERROR_INVALIDATE_DATE,
+} from "../constants.js";
+
 const InputView = {
-    async readDate() {
-        const input = await Console.readLineAsync("12월 중 식당 예상 방문 날짜는 언제인가요? (숫자만 입력해 주세요!)");
-        // ...
+    async getDate() {
+        try{
+            const input = await Console.readLineAsync(INPUT_GET_DATE + `\n`);
+            InputValidation.isValidateDate(input);
+        } catch (error) {
+            Console.print(error.message);
+            return this.getDate();
+        }
+    }
+}
+
+const InputValidation = {
+    isValidateDate (input){
+        if(Number.isNaN(input) || input < 1 || input > 31){
+            throw new Error(ERROR_INVALIDATE_DATE + `\n`);
+        }
     }
 }
 

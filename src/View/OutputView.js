@@ -1,13 +1,14 @@
 import {
     Console,
 } from "@woowacourse/mission-utils";
+
 import {
-    EVENT_INFORMATION,
+    OUTPUT_EVENT_INFORMATION,
 } from "../constants.js"
 const OutputView = {
 
     printEventInformation() {
-        Console.print(EVENT_INFORMATION);
+        Console.print(OUTPUT_EVENT_INFORMATION + `\n`);
     },
 
     printMenu() {
