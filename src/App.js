@@ -6,7 +6,7 @@ class App {
     OutputView.printEventInformation();
     const date = await InputView.getDate();
     OutputView.printMenu();
-    const oredrMenu = await InputView.getMenu();
+    const orderMenu = await InputView.getMenu();
     
   }
 }

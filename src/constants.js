@@ -71,6 +71,7 @@ const ERROR_INVALIDATE_ORDER_COUNT = `[ERROR] 메뉴는 한 번에 최대 20개�
 const ERROR_INVALIDATE_ORDER_ONLYDRINK = `[ERROR] 음료만 주문하실 수 없습니다.`;
 
 const ERROR_INVALIDATE_ORDER_TOO_MANY = `[ERROR] 메뉴는 한 번에 최대 ${MAX_ORDER}개까지 주문하실 수 있습니다.`;
+
 export { 
     MAX_ORDER,
     MENU_APPITIZER,
