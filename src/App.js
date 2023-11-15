@@ -11,6 +11,8 @@ class App {
     const totalPrice = Calculation.calculateTotalOrderPrice(orderMenu);
     const discountArray = Calculation.calculateEvents(date, totalPrice, orderMenu);
     OutputView.printOrder(date, orderMenu);
+    OutputView.printEvent(totalPrice, discountArray);
+    OutputView.printClosingRemarks(date);
   }
 }
 
