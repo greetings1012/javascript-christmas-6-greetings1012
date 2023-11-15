@@ -1,5 +1,15 @@
+const MENU_APPITIZER = [{ "양송이수프": 6000 }, { "타파스": 5500 }, { "시저샐러드": 8000 }]
+
+const MENU_MAIN = [{ "티본스테이크": 55000 }, { "바비큐립": 54000 }, { "해산물파스타": 35000 }, { "크리스마스파스타": 25000 }]
+
+const MENU_DESSERT = [{ "초코케이크": 15000 }, { "아이스크림": 5000 }]
+
+const MENU_DRINK = [{ "제로콜라": 3000 }, { "레드와인": 60000 }, { "샴페인": 25000 }]
+
 const INPUT_GET_DATE = `안녕하세요! 우테코 식당 12월 이벤트 플래너입니다.
 12월 중 식당 예상 방문 날짜는 언제인가요? (숫자만 입력해 주세요!)`;
+
+const INPUT_GET_MENU = `주문하실 메뉴를 메뉴와 개수를 알려 주세요. (e.g. 해산물파스타-2,레드와인-1,초코케이크-1)`;
 
 const OUTPUT_EVENT_INFORMATION = `크리스마스를 맞아 우테코 식당에서 이벤트를 진행합니다!
 
@@ -53,7 +63,12 @@ const OUTPUT_MENU = `<< MENU >>
 const ERROR_INVALIDATE_DATE = `[ERROR] 유효하지 않은 날짜입니다. 다시 입력해 주세요.`;
 
 export { 
+    MENU_APPITIZER,
+    MENU_MAIN,
+    MENU_DESSERT,
+    MENU_DRINK,
     INPUT_GET_DATE,
+    INPUT_GET_MENU,
     OUTPUT_EVENT_INFORMATION,
     OUTPUT_MENU, 
     ERROR_INVALIDATE_DATE,

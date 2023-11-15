@@ -13,7 +13,7 @@ const OutputView = {
     },
 
     printMenu(){
-        Console.print(`n` + OUTPUT_MENU + `\n`);
+        Console.print(`\n` + OUTPUT_MENU + `\n`);
     },
 
     printOrder() {

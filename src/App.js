@@ -6,6 +6,8 @@ class App {
     OutputView.printEventInformation();
     await InputView.getDate();
     OutputView.printMenu();
+    await InputView.getMenu();
+    
   }
 }
 
