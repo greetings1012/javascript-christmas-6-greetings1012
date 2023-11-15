@@ -10,6 +10,7 @@ class App {
     const orderMenu = await InputView.getMenu();
     const totalPrice = Calculation.calculateTotalOrderPrice(orderMenu);
     const discountArray = Calculation.calculateEvents(date, totalPrice, orderMenu);
+    OutputView.printOrder(date, orderMenu);
   }
 }
 

@@ -4,7 +4,7 @@ import {
 
 import { 
     MAX_ORDER,
-    MENU_APPITIZER,
+    MENU_APPETIZER,
     MENU_MAIN,
     MENU_DRINK,
     MENU_DESSERT,
@@ -86,7 +86,7 @@ const InputValidation = {
     },
 
     isOrderInMenu(menuDictionary) {
-        const allMenu = [MENU_APPITIZER, MENU_MAIN, MENU_DRINK, MENU_DESSERT];
+        const allMenu = [MENU_APPETIZER, MENU_MAIN, MENU_DRINK, MENU_DESSERT];
         for (let i = 0; i < menuDictionary.length; i++) {
             const orderMenuName = Object.keys(menuDictionary[i])[0];
             if (!allMenu.flat().some(item => orderMenuName in item)) {

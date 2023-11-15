@@ -1,6 +1,6 @@
 import {
     DISCOUNT_VALUE,
-    MENU_APPITIZER,
+    MENU_APPETIZER,
     MENU_MAIN,
     MENU_DESSERT,
     MENU_DRINK
@@ -13,7 +13,6 @@ const Calculation = {
             const order = menuDictionary[i];
             const menuName = Object.keys(order)[0];
             const count = order[menuName];
-
             const menuPrice = this.calculateEachOrderPrice(menuName);
             totalPrice += menuPrice * count;
         }
@@ -22,8 +21,8 @@ const Calculation = {
     
     calculateEachOrderPrice(menuName){
         switch (true) {
-            case MENU_APPITIZER.some(menu => menu.hasOwnProperty(menuName)):
-                return MENU_APPITIZER.find(menu => menu.hasOwnProperty(menuName))[menuName];
+            case MENU_APPETIZER.some(menu => menu.hasOwnProperty(menuName)):
+                return MENU_APPETIZER.find(menu => menu.hasOwnProperty(menuName))[menuName];
             case MENU_MAIN.some(menu => menu.hasOwnProperty(menuName)):
                 return MENU_MAIN.find(menu => menu.hasOwnProperty(menuName))[menuName];
             case MENU_DESSERT.some(menu => menu.hasOwnProperty(menuName)):
@@ -43,6 +42,7 @@ const Calculation = {
         eventListArray.push(this.calculateWeekEndDiscount(date, orderMenu));
         eventListArray.push(this.calculateSpecialDiscount(date));
         eventListArray.push(this.calculateGiveawayDiscount(totalPrice));
+        eventListArray.push(eventListArray.slice(1, 7).reduce((total, value) => total + value, 0));
         return eventListArray;
     },
 

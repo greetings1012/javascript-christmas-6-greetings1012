@@ -2,7 +2,7 @@ const MAX_ORDER = 20;
 
 const DISCOUNT_VALUE = 2023;
 
-const MENU_APPITIZER = [{ "양송이수프": 6000 }, { "타파스": 5500 }, { "시저샐러드": 8000 }]
+const MENU_APPETIZER = [{ "양송이수프": 6000 }, { "타파스": 5500 }, { "시저샐러드": 8000 }]
 
 const MENU_MAIN = [{ "티본스테이크": 55000 }, { "바비큐립": 54000 }, { "해산물파스타": 35000 }, { "크리스마스파스타": 25000 }]
 
@@ -77,7 +77,7 @@ const ERROR_INVALIDATE_ORDER_TOO_MANY = `[ERROR] 메뉴는 한 번에 최대 ${M
 export { 
     MAX_ORDER,
     DISCOUNT_VALUE,
-    MENU_APPITIZER,
+    MENU_APPETIZER,
     MENU_MAIN,
     MENU_DESSERT,
     MENU_DRINK,
