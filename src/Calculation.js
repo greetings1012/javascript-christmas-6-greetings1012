@@ -1,4 +1,3 @@
-import { Console } from "@woowacourse/mission-utils";
 import {
     DISCOUNT_VALUE,
     MENU_APPITIZER,
@@ -44,7 +43,6 @@ const Calculation = {
         eventListArray.push(this.calculateWeekEndDiscount(date, orderMenu));
         eventListArray.push(this.calculateSpecialDiscount(date));
         eventListArray.push(this.calculateGiveawayDiscount(totalPrice));
-        Console.print(eventListArray);
         return eventListArray;
     },
 
