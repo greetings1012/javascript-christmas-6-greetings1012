@@ -4,9 +4,9 @@ import OutputView from "./OutputView.js";
 class App {
   async run() {
     OutputView.printEventInformation();
-    await InputView.getDate();
+    const date = await InputView.getDate();
     OutputView.printMenu();
-    await InputView.getMenu();
+    const oredrMenu = await InputView.getMenu();
     
   }
 }

@@ -1,3 +1,5 @@
+const MAX_ORDER = 20;
+
 const MENU_APPITIZER = [{ "양송이수프": 6000 }, { "타파스": 5500 }, { "시저샐러드": 8000 }]
 
 const MENU_MAIN = [{ "티본스테이크": 55000 }, { "바비큐립": 54000 }, { "해산물파스타": 35000 }, { "크리스마스파스타": 25000 }]
@@ -62,7 +64,15 @@ const OUTPUT_MENU = `<< MENU >>
 
 const ERROR_INVALIDATE_DATE = `[ERROR] 유효하지 않은 날짜입니다. 다시 입력해 주세요.`;
 
+const ERROR_INVALIDATE_ORDER_INPUT = `[ERROR] 유효하지 않은 주문입니다. 다시 입력해 주세요.`;
+
+const ERROR_INVALIDATE_ORDER_COUNT = `[ERROR] 메뉴는 한 번에 최대 20개까지 주문하실 수 있습니다.`;
+
+const ERROR_INVALIDATE_ORDER_ONLYDRINK = `[ERROR] 음료만 주문하실 수 없습니다.`;
+
+const ERROR_INVALIDATE_ORDER_TOO_MANY = `[ERROR] 메뉴는 한 번에 최대 ${MAX_ORDER}개까지 주문하실 수 있습니다.`;
 export { 
+    MAX_ORDER,
     MENU_APPITIZER,
     MENU_MAIN,
     MENU_DESSERT,
@@ -72,4 +82,8 @@ export {
     OUTPUT_EVENT_INFORMATION,
     OUTPUT_MENU, 
     ERROR_INVALIDATE_DATE,
+    ERROR_INVALIDATE_ORDER_INPUT,
+    ERROR_INVALIDATE_ORDER_COUNT,
+    ERROR_INVALIDATE_ORDER_ONLYDRINK,
+    ERROR_INVALIDATE_ORDER_TOO_MANY
 };
